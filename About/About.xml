@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 
-    <packageId>ja-JP.depended.mod.package.id</packageId>
+    <packageId>ja.JP.depended.mod.package.id</packageId>
     <name>RimworldTranslationMod</name>
     <!-- <name>depended mod name(ja-JP)</name> -->
     <authors>

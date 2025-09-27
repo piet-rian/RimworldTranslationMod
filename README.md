@@ -1,7 +1,7 @@
 # RimworldTranslationMod
 <!-- # depended mod name(ja-JP) -->
 
-[翻訳対象のMod名を入れる](https://steamcommunity.com/sharedfiles/filedetails/?id=xxxxxxxxx) およびその拡張Modの自分用日本語化Mod
+[depended mod name](https://steamcommunity.com/sharedfiles/filedetails/?id=xxxxxxxxx) およびその拡張Modの自分用日本語化Mod
 
 [Extract translation](https://steamcommunity.com/sharedfiles/filedetails/?id=3026452122)で出力したファイルを、GithubCopilot の Agent mode に翻訳させた上で、一部に強めの意訳を施した内容であることを承知の上で使用してください。
 
@@ -24,7 +24,6 @@
 > * (翻訳対象がさらに前提としているMod名)
 > * depended mod name
 > * additional mod name
-> * VOE拡張Mod群(詳細は後で記載)
 > * **本Mod**
 
 ## MID-SAVE

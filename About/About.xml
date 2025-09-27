@@ -22,7 +22,7 @@
         <li>
             <packageId>depended.mod.package.id</packageId>
             <displayName>depended mod name</displayName>
-            <steamWorkshopUrl>steam://url/CommunityFilePage/[some_number]</steamWorkshopUrl>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/_workshopnumber_</steamWorkshopUrl>
         </li>
     </modDependencies>
 

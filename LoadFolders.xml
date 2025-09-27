@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+  <!--
+    mod A および そのModを拡張する mod B,C,D のような関係にあるModの翻訳を想定した構成
+      VOEとその拡張Modのような関係を想定
+    mod A が(有志更新などによって) 並列してる Ax, Ay のような関係にあるものは考慮外とする
+      MoonjellyのHAR,Biotech版みたいな関係の場合はそもそも手を出さない
+    -->
+  <v1.6>
+    <!-- かならずある想定のMod(前述の例でいうとA)の翻訳文 -->
+    <li>1.6/depended.mod.package.id</li>
+
+    <!-- ない場合があるMod(前述の例でいうとB,C,D)の翻訳文 -->
+    <li IfModActive="additional.mod.package.id">1.6/additional.mod.package.id</li>
+
+    <!--  否定ルールもあるので、何かの時のために一応コメントとして記法を残しておく -->
+    <!-- <li IfModNotActive="Ludeon.RimWorld.Ideology">...</li> -->
+  </v1.6>
+
+  <!-- バージョン上がったらここに追加していく -->
+</loadFolders>

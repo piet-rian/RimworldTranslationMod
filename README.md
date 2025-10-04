@@ -40,6 +40,12 @@
 
 * 他の翻訳がすでに導入されてる状態で、更に本Modも導入した場合は変なことが起こるかもしれません
 
+## 訳注
+
+原文中の節と訳文の対応については [用語集](.github/instructions/glossary.instructions.md) 参照
+
+<!-- 以下、それ以外の特記事項があれば、個別に追記 -->
+
 ## NOTICE
 
 本Modは [The Unlicense](LICENSE) [(日本語参考訳)](https://licenses.opensource.jp/Unlicense/Unlicense.html) で提供されています(`About/Preview.png` は除く)。

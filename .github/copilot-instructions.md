@@ -13,7 +13,7 @@ applyTo: "**"
 * `.github` : GitHub関連の設定ファイル等を格納するフォルダ
   * `copilot-instructions.md` : 本ファイル。 GitHub Copilot Agent mode 用の概要説明書
   * `translation.instructions.md` : GitHub Copilot Agent mode 用の翻訳指示書
-  * `glossary.md` : 用語集, 翻訳用語の統一に使用
+  * `glossary.instructions.md` : 用語集, 翻訳用語の統一に使用
 * `About` : Modのメタ情報を格納するフォルダ
 * `LICENSE` : ライセンス情報
 * `README.md` : 日本語化Modの説明

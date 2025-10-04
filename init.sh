@@ -12,7 +12,7 @@
 
 ### 処理内容
 # 1. ゲームバージョンとmodパッケージ名に応じた、翻訳ファイル格納用フォルダの作成
-#    - `<ゲームバージョン>/<modパッケージ名>/.gitkeep` を作成
+#    - `<ゲームバージョン>/<modパッケージ名>/Languages/.gitkeep` を作成
 #      - フォルダがないはずなので、`mkdir -p` で親フォルダも含めて作成
 #      - `.gitkeep` は空ファイルで、gitで空フォルダを管理するための慣習的なファイル
 #
@@ -57,7 +57,7 @@ MOD_PACKAGE="$4"
 # 1. ゲームバージョンとmodパッケージ名に応じた、翻訳ファイル格納用フォルダの作成
 create_translation_folder() {
   # ゲームバージョンおよび modパッケージ内に `.` が含まれている場合は、そのままの名前でフォルダを作成する
-  TRANSLATION_DIR="${GAME_VERSION}/${MOD_PACKAGE}"
+  TRANSLATION_DIR="${GAME_VERSION}/${MOD_PACKAGE}/Languages"
   mkdir -p "${TRANSLATION_DIR}"
   touch "${TRANSLATION_DIR}/.gitkeep"
   echo "Created translation folder: ${TRANSLATION_DIR}/.gitkeep"

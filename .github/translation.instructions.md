@@ -30,12 +30,34 @@ applyTo: 1.[0-9]\**\Languages\Japanese (日本語)\**\*.xml
 
 ## 翻訳に関しての特別な指示
 
+翻訳例は `translation.sample.instructions.md` を参照
+
 * 訳文の行頭、行末に空白を含めないこと
 * 訳文に実改行を含めないこと
 * 原文内の単一の実改行は、訳文から削除すること
 * 原文内の連続する実改行は、訳文においてそれぞれを `\n` に置き換えること
 * 原文内の `\n` は、そのまま訳文に `\n` として出力すること
-* 原文に `<li>`タグがある場合は、翻訳文においてもタグ構造を維持すること
 * 原文内のプレースホルダー (`[xxxx]`, `{yyyy}`) は、訳文にも同様に含めること
+* 原文に `<li>`タグが場合は、以下の章のルールに従うこと
 
-特別な指示に該当する場合の翻訳例は `translation.sample.instructions.md` を参照
+### 原文に `<li>` タグが含まれる場合の特別
+
+以下に例を示し、その上でルールを説明する
+
+```xml
+  <!-- EN:
+    <li>questName->Bounty: [nameFull] [nickname]</li>
+    <li>questName->Wanted, Dead or Alive: [nickname]</li>
+    <li>questName->[nickname]'s brigands</li>
+  -->
+  <VFES_Wanted.questDescriptionAndNameRules.rulesStrings>
+    <li>questName->懸賞金: [nameFull] [nickname]</li>
+    <li>questName->指名手配, Dead or Alive: [nickname]</li>
+    <li>questName->[nickname] のならず者たち</li>
+```
+
+* 上記の例のように、原文が `<li>` タグで囲まれている場合は、訳文も同様に `<li>` タグで囲むこと
+* `<li>` タグ内の構造は `:key:->:value:` となっている
+* `:key:` の部分は翻訳しないこと
+* `:value:` の部分を翻訳のみ翻訳すること
+  * `:value:` 内部の翻訳ルールは、上記の「翻訳に関しての特別な指示」に従うこと

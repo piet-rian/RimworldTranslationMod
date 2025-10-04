@@ -42,3 +42,23 @@ for FILE_PATTERN in "${TARGET_FILES[@]}"; do
     -e "s/${PLACEHOLDER_MOD_WORKSHOP_NUMBER}/${MOD_WORKSHOP_NUMBER}/g" \
     -e "s/${PLACEHOLDER_MOD_PACKAGE}/${MOD_PACKAGE}/g"
 done
+
+### 追加の処理その1
+## `**/About/About.xml` の 暫定MOD名を削除
+# `<name>RimworldTranslationMod</name>` の行を削除
+find . -type f -path "**/About/About.xml" -print0 | xargs -0 sed -i \
+  -e "/<name>RimworldTranslationMod<\/name>/d"
+# コメントアウトされている 本来のMOD名の行のコメントアウトを解除
+find . -type f -path "**/About/About.xml" -print0 | xargs -0 sed -i \
+  -e "s/<!-- <name>/<name>${MOD_NAME}/" \
+  -e "s/<\/name> -->/<\/name>/"
+
+### 追加の処理その2
+## `**/README.md` の 暫定MOD名を削除
+# `# RimworldTranslationMod` の行を削除
+find . -type f -path "**/README.md" -print0 | xargs -0 sed -i \
+  -e "/# RimworldTranslationMod/d"
+# コメントアウトされている 本来のMOD名の行のコメントアウトを解除
+find . -type f -path "**/README.md" -print0 | xargs -0 sed -i \
+  -e "s/<!-- # /# /" \
+  -e "s/ -->//"

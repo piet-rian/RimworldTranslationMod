@@ -7,8 +7,8 @@
 * `\1.[0-9]\**\Languages\Japanese (日本語)\**\*.xml`: 日本語化用XMLファイル群
     * `**` は日本語化対象とするModによって異なる
 * `.github` : GitHub関連の設定ファイル等を格納するフォルダ
-  * `copilot-instructions.md` : 本ファイル、GitHub Copilot の Agent mode 用指示書
-  * `*.instructions.md` : 個別指示用ファイル
+  * `copilot-instructions.md` : 本ファイル。 GitHub Copilot Agent mode 用の概要説明書
+  * `translation.instructions.md` : GitHub Copilot Agent mode 用の翻訳指示書
   * `glossary.md` : 用語集, 翻訳用語の統一に使用
 * `About` : Modのメタ情報を格納するフォルダ
 * `LICENSE` : ライセンス情報
@@ -17,5 +17,9 @@
 
 ## 基本情報
 
-* 取り扱うデータはXML
 * 文字コードはUTF-8
+* 改行コードはCRLF
+* 取り扱うデータはXML
+  * ただし、ゲーム固有のパーサーによって解釈されるため、厳密なXMLではない
+    * 例として、タグ内に `<` や `>` が含まれる場合がある
+    * ゲーム固有のパーサーはこれを正しく解釈できるため、訳文にも同様に含めること

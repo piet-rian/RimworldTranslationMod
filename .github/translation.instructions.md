@@ -4,31 +4,38 @@ applyTo: 1.[0-9]\**\Languages\Japanese (日本語)\**\*.xml
 
 # Translation Instructions
 
-## 翻訳に関する基本的な指示
+## ファイルの基本情報
+
+* 文字コードはUTF-8
+* 改行コードはCRLF
+* データ構造はXML
+  * ただし、ゲーム固有のパーサーによって解釈されるため、厳密なXMLではない
+    * 例として、タグ内に `<` や `>` が含まれる場合がある
+    * ゲーム固有のパーサーはこれを正しく解釈できるため、訳文にも同様に含めること
+
+## 日本語化に関する基本的な指示
 
 * 翻訳元(原文)は `<!-- zz: xxx -->` というコメントタグ内に記載されている `xxx` の部分
 * 原文の言語は `<!-- zz: xxx -->` というコメントタグ内に記載されている `zz` で判断する
 * 翻訳先(訳文)は日本語(ja-JP)
 * 訳文は原文の直下にあるタグ内の `TODO` の部分に記載する
-* [glossary.csv](./glossary.csv) に用語集を用意しているので、適宜参照すること
-  * 用語集にないものについては、普遍的な訳語がある場合はそれを使用し、ない場合はカタカナ表記とすること
-    * 普遍的な訳語がない例: chemshine → ケムシャイン
+* `.github\translation.instructions.md` に記載されている用語集を参照し、用語を統一すること
 
-### 例: 翻訳前
+### 例: 日本語化前
 
 ```xml
 <!-- EN: A simple vest, providing a decent layer of insulation from both heat and cold. -->
 <Apparel_Vest.description>TODO</Apparel_Vest.description>
 ```
 
-### 例: 翻訳後
+### 例: 日本語化後
 
 ```xml
 <!-- EN: A simple vest, providing a decent layer of insulation from both heat and cold. -->
 <Apparel_Vest.description>シンプルなベストで、暑さと寒さの両方に対する適度な断熱層を提供します。</Apparel_Vest.description>
 ```
 
-## 翻訳に関しての特別な指示
+## 日本語化に関しての特別な指示
 
 * 訳文の行頭、行末に空白を含めないこと
 * 訳文に実改行を含めないこと
@@ -40,7 +47,7 @@ applyTo: 1.[0-9]\**\Languages\Japanese (日本語)\**\*.xml
 
 ### `<*.rulesStrings>` 専用の指示
 
-先に例を示し、その上でルールを説明する
+先に日本語化例を示し、その上でルールを説明する
 
 ```xml
 <!-- EN:

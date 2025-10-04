@@ -1,5 +1,5 @@
 ---
-applyTo: 1.[0-9]\**\Languages\Japanese (日本語)\**\*.xml
+applyTo: \**\Languages\Japanese (日本語)\**\*.xml
 ---
 
 # Translation Instructions

@@ -28,7 +28,7 @@
 
     <loadAfter>
         <li>depended.mod.package.id</li>
-        <li>additional.mod.package.id</li>
+        <!-- <li>additional.mod.package.id</li> -->
     </loadAfter>
 
 </ModMetaData>

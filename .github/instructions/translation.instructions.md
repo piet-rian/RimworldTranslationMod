@@ -19,7 +19,6 @@ applyTo: \**\Languages\Japanese (日本語)\**\*.xml
 * 原文の言語は `<!-- zz: xxx -->` というコメントタグ内に記載されている `zz` で判断する
 * 翻訳先(訳文)は日本語(ja-JP)
 * 訳文は原文の直下にあるタグ内の `TODO` の部分に記載する
-* `.github\translation.instructions.md` に記載されている用語集を参照し、用語を統一すること
 
 ### 例: 日本語化前
 

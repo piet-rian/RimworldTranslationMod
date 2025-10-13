@@ -30,5 +30,6 @@ applyTo: \**\Languages\Japanese (日本語)\**\*.xml
 | ultratech | ウルトラテック | 文明の技術レベルを表す架空用語、rimworld世界における人類の科学技術の頂点に相当する | approved | 2025-10-04 |
 | archotech | アルコテック | 文明の技術レベルを表す架空用語、人知を超えた技術レベルを意味する | approved | 2025-10-04 |
 | Advanced | 先進 | Spacer相当の技術レベルによる産物の修飾子として使用される | approved | 2025-10-04 |
-| psyfocus | サイフォーカス | 超能力を使用する際のパラメーター | approved | 2025-10-04 |
-| mechanoids | メカノイド | 架空の存在、Rimworldにおいて十分な知性を持つ機械生命体の総称 | approved | 2025-10-04 |
+| psyfocus | サイフォーカス | 超能力を使用する際のパラメーター | approved | 2025-10-13 |
+| mechanoids | メカノイド | 架空の存在、Rimworldにおいて十分な知性を持つ機械生命体の総称 | approved | 2025-10-13 |
+| Entity | 「存在」 | 架空の実態あるいは現象、DLC'Anomaly'で追加される、起源が不明な諸々の総称 | approved | 2025-10-13 |

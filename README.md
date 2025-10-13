@@ -27,7 +27,7 @@
 > * Harmony
 > * Core
 > * DLC群
-> * (翻訳対象がさらに前提としているMod名)
+> * (翻訳対象がさらに前提としているMod)
 > * depended mod name
 > * **本Mod**
 

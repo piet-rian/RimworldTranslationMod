@@ -93,7 +93,13 @@ for file in $FILES_TO_PROCESS; do
 done
 }
 
+# 4. 自身(init.sh)を削除する
+rm_self() {
+  rm init.sh
+}
+
 ### 全体の順次実行
 create_translation_folder
 replace_placeholders
 uncomment_mod_name
+rm_self

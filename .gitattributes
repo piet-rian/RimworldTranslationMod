@@ -1,0 +1,2 @@
+# github上の使用言語判定においてshellを除外する
+*.sh linguist-generated

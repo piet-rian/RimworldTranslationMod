@@ -33,3 +33,4 @@ applyTo: \**\Languages\Japanese (日本語)\**\*.xml
 | psyfocus | サイフォーカス | 超能力を使用する際のパラメーター | approved | 2025-10-13 |
 | mechanoids | メカノイド | 架空の存在、Rimworldにおいて十分な知性を持つ機械生命体の総称 | approved | 2025-10-13 |
 | Entity | 「存在」 | 架空の実態あるいは現象、DLC'Anomaly'で追加される、起源が不明な諸々の総称 | approved | 2025-10-13 |
+| gravship | グラヴシップ | 架空の乗り物、DLC'Odyssey'で追加される。反重力技術を用いた、衛星軌道上までは航行可能な宇宙船。 | approved | 2025-10-13 |
